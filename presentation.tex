@@ -1,0 +1,92 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage{amsmath}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\title[HSE Internship]{LaTeX Presentation}
+\subtitle{\textit{or an attempt at this}}
+\author[Nekrasov]{Artem Nekrasov}
+\date[July 2022]{July 2022}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{A few words at the beginning}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{frame}
+\frametitle{What is the power of LaTeX?}
+
+\begin{itemize}
+    \item The possibility of unlimited customization
+    \item Free layout system for high-quality documents
+    \item Ease of working with complex mathematical formulas
+    \item The main task of the author is not design, but content
+    \item Multi-lingual typesetting
+\end{itemize}
+\end{frame}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{Markdown}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\begin{frame}
+\frametitle{Markdown}
+
+\begin{itemize}
+    \item Using the \textit{underbrace} command, you can draw a line under an important word;
+        \\ $\underline{Example!}$
+    \item Using the \textit{underscore} command, you can combine the information with a parenthesis at the bottom;
+        \\$\underbrace{a + b + c + d}_{Example!} + e + f$
+    \item Using the \textit{xrightarrow} command, you can get an arrow with an inscription on top;
+        \\$Example \xrightarrow[]{function "!"} Example!$
+    \item Using the \textit{star} command, you can get an asterisk-symbol;
+        \\$\star Example!$
+\end{itemize}
+\end{frame}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\section{A few words at the end}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\begin{frame}
+\frametitle{Impressions}
+
+This mini-course allowed me to finally start learning LaTeX. The word "forced" is inappropriate here, because I got incredible pleasure from the opportunities that this system provides. After I finally "assembled" the final file, I realized what the real quality of the document is. It's like I wrote a book or a scientific article myself. It's inspiring.
+
+\end{frame}
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+\end{document}

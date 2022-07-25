@@ -1,0 +1,214 @@
+\documentclass[14pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[russian]{babel}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{amsmath}
+\usepackage{cite}
+
+\title{Summer internship}
+\author{Artem Nekrasov}
+\date{July 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Money\footnote{\textit{Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts, such as taxes, in a particular country or socio-economic context.}} is a tool of exchange, which can't exist unless there are goods produced and men able to produce them. Money is the material shape of the principle that men who wish to deal with one another must deal by trade and give value for value." "Wealth is the product of man's capacity to think\cite{rand2005atlas}.
+\end{abstract}
+
+\clearpage
+
+\tableofcontents
+\part{Some text}
+\chapter[The best Quotes of "Catch 22"]{The best Quotes of "Catch 22\footnote{\textit{a dilemma or difficult circumstance from which there is no escape because of mutually conflicting or dependent conditions.}}"}
+
+\section{First quote}
+Morale was deteriorating and it was all Yossarian's fault. The country was in peril; he was jeopardizing his traditional rights of freedom and independence by daring to exercise them\cite{heller1999catch}.
+
+\section{Second quote}
+There was no telling what people might find out once they felt free to ask whatever questions they wanted to\cite{heller1999catch}.
+
+\section{Third quote}
+Surely there can't be so many countries worth dying for.'
+Anything worth living for,' said Nately, 'is worth dying for.'
+And anything worth dying for,' answered the sacrilegious old man, 'is certainly worth living for\cite{heller1999catch}.
+
+\section{Fourth quote}
+Sure, that's what I mean,' Doc Daneeka said. 'A little grease is what makes this world go round. One hand washes the other. Know what I mean? You scratch my back, I'll scratch yours\cite{heller1999catch}.'
+
+\subsection{continuation I}
+Yossarian knew what he meant.
+
+\subsection{continuation II}
+That's not what I meant,' Doc Daneeka said, as Yossarian began scratching his back.
+
+\chapter{Apollo 11}
+Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and lunar module pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC, and Armstrong became the first person to step onto the Moon's surface six hours and 39 minutes later, on July 21 at 02:56 UTC. Aldrin joined him 19 minutes later, and they spent about two and a quarter hours together exploring the site they had named Tranquility Base upon landing. Armstrong and Aldrin collected 47.5 pounds (21.5 kg) of lunar material to bring back to Earth as pilot Michael Collins flew the Command Module Columbia in lunar orbit, and were on the Moon's surface for 21 hours, 36 minutes before lifting off to rejoin Columbia.
+
+Apollo 11 was launched by a Saturn V rocket from Kennedy Space Center on Merritt Island, Florida, on July 16 at 13:32 UTC, and it was the fifth crewed mission of NASA's\footnote{The National Aeronautics and Space Administration (NASA /ˈnæsə/) is an independent agency of the US federal government responsible for the civil space program, aeronautics research, and space research.} Apollo program. The Apollo spacecraft had three parts: a command module (CM) with a cabin for the three astronauts, the only part that returned to Earth; a service module (SM), which supported the command module with propulsion, electrical power, oxygen, and water; and a lunar module (LM) that had two stages—a descent stage for landing on the Moon and an ascent stage to place the astronauts back into lunar orbit.
+
+After being sent to the Moon by the Saturn V's third stage, the astronauts separated the spacecraft from it and traveled for three days until they entered lunar orbit. Armstrong and Aldrin then moved into Eagle and landed in the Sea of Tranquility on July 20. The astronauts used Eagle's ascent stage to lift off from the lunar surface and rejoin Collins in the command module. They jettisoned Eagle before they performed the maneuvers that propelled Columbia out of the last of its 30 lunar orbits onto a trajectory back to Earth. They returned to Earth and splashed down in the Pacific Ocean on July 24 after more than eight days in space.
+
+Armstrong's first step onto the lunar surface was broadcast on live TV to a worldwide audience. He described the event as "one small step for [a] man, one giant leap for mankind."Apollo 11 effectively proved US victory in the Space Race to demonstrate spaceflight superiority, by fulfilling a national goal proposed in 1961 by President John F. Kennedy, "before this decade is out, of landing a man on the Moon and returning him safely to the Earth\cite{korotev2001new}."
+
+\clearpage
+
+\part{Actual task}
+\chapter{Customized tables}
+
+\section{Algebra of logic}
+\begin{tabular}{| c | c | l | l |}
+\hline
+  A & B & $ A \vee B $ &  $ A \wedge B $ \\
+  \hline
+  0 & 0 & 0 & 0 \\
+  \hline
+  0 & 1 & 1 & 0 \\
+  \hline
+  1 & 0 & 1 & 0 \\
+  \hline
+  1 & 1 & 1 & 1 \\
+  \hline
+\end{tabular} \\
+
+\section{The permutation sign for $n = 2$}
+\begin{tabular}{|c | c | c|}
+    \hline
+    $\sigma$
+    & 
+    $\begin{pmatrix}
+        1 & 2 \\
+        1 & 2
+    \end{pmatrix} $
+    &
+    $\begin{pmatrix}
+        1 & 2\\
+        2 & 1
+    \end{pmatrix} $
+    \\ \hline
+    sgn $\sigma$
+    &
+    1
+    &
+    -1
+    \\ \hline
+\end{tabular} \\
+
+
+\section{Table of the field $F_{3}$ by multiplication}
+\rowcolors{1}{yellow}{blue}
+\begin{tabular}{|c|c|c|c|}
+\hline
+  $\cdot$ & $f_{0} = x^2 + 1$ & $f_{1} = x^2 + x$ & $f_{2} = x^2 + x + 1$ \\
+  \hline
+  $f_{0} = x^2 + 1$ & $f_{0}$ & $f_{0}$ & $f_{0}$ \\
+  \hline
+  $f_{1} = x^2 + x$ & $f_{0}$ & $f_{1}$ & $f_{2}$ \\
+  \hline
+  $f_{2} = x^2 + x + 1$ & $f_{0}$ & $f_{2}$ & $f_{2}$ \\
+\hline
+\end{tabular}
+
+\clearpage
+
+\chapter{Images}
+
+\begin{figure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=6cm]{img/Monsters_INC.jpg} 
+\caption{Monsters INC\footnote{Cartoon "Monsters, Inc".}}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=6cm]{img/НИУ_ВШЭ.jpg}
+\caption{HSE\footnote{Real life}}
+\label{fig:subim2}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=6cm]{img/Vault_Tec.jpg}
+\caption{VAULT-TEC\footnote{Fallout video game series}}
+\label{fig:subim3}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=6cm]{img/Umbrella_Corporation.jpg} 
+\caption{Umbrella corporation\footnote{Resident Evil video game series}}
+\label{fig:subim4}
+\end{subfigure}
+\caption{Corporations of evil and my  university}
+\end{figure}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{img/НИУ_ВШЭ.jpg}
+\caption{The best university in the world}
+\label{fig:figure2}
+\end{figure}
+
+\chapter{Lists}
+
+\section{Ordered list}
+\subsection{The 3 best movies of all time}
+\begin{enumerate}  
+	\item 2001: A Space Odyssey (1968) 
+	\item The Godfather (1972) 
+	\item Citizen Kane (1941) 
+\end{enumerate}
+
+\section{Unordered list}
+\subsection{The 3 best movies for me}
+\begin{itemize}
+	\item Drive (2011)
+	\item Inception (2010)
+	\item Blade runner 2049 (2017) 
+\end{itemize}
+
+\section{Nested lists}
+\subsection{The 3 best movies of all time and have I Watched Them}
+\begin{enumerate}  
+	\item 2001: A Space Odyssey (1968)
+	\begin{itemize}
+	    \item viewed
+	    \item once
+	\end{itemize}
+	\item The Godfather (1972) 
+	\begin{itemize}
+	    \item viewed
+	    \item twice
+	\end{itemize}
+	\item Citizen Kane (1941)
+	\begin{itemize}
+	    \item not viewed
+	\end{itemize}
+\end{enumerate}
+
+\chapter{Mathematical formulas}
+\section{Integral}
+\[ \int_{0}^{+\infty} \frac{x \cdot \ln(x)}{(1 + x^2 )^2}\,dx = \int_{+\infty}^{0} \frac{t \cdot \ln(t)}{(t^2 + 1)^2}\, dt = - \int_{+\infty}^{0} \frac{t\cdot \ln(t)}{(t^2 + 1)^2}\, dt = 0\]
+
+\section{Irrational expression}
+\begin{math}
+\frac{3-63\sqrt[3]{7}-8\sqrt[3]{49}}{1-2\sqrt[3]{7}-4\sqrt[3]{49}}\\\\
+\alpha = \sqrt[3]{7} \\\\
+\frac{3-63\alpha - 8\alpha^2}{1-2\alpha-4\alpha^2} = \ldots
+\end{math}
+
+\section{random}
+$$g(r,\varphi) = \frac{r^2 \cdot \cos^2{\varphi} + r \cdot \sin{\varphi}}{\sqrt{r^2 \cdot \cos^2{\varphi} +r^2 \cdot \sin^2{\varphi}}} = r \cdot \cos^2{\varphi} + \sin{\varphi}$$
+
+\section{The theorem on the limit of a clamped function}
+$|\cos{x} - \cos{y}| = 2\cdot |\sin{\frac{x+y}{2}} \cdot \sin{\frac{x-y}{2}}| \le 2\cdot |\sin{\frac{x-y}{2}}| \le |x-y|$
+
+% place for comments.
+% and one more place for comments.
+% by the way, all captions, citations and references are already in place. This can be found if you carefully read the document (Even the first part, where only the text).
+
+\bibliographystyle{plain}
+\bibliography{bib.bib}
+
+\end{document}
